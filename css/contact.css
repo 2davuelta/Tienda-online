@@ -1,0 +1,116 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+body {
+   display:flow-root;
+   padding-top: 3px;
+   
+   }
+.row-1{
+   background: linear-gradient(rgb(255, 255, 255),rgb(247, 177, 98),rgb(0, 0, 0));
+}
+.row top-wrap{
+   width: 100%;
+}
+.nav{
+   width: 100%;
+}
+ul {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+ul li {
+   position: relative;
+   list-style: none;
+}
+ul li a {
+   position: relative; font-size: 3em;
+   text-decoration: none;
+   line-height: 1em;
+   letter-spacing: 2px; text-transform: uppercase;
+   color: transparent;
+   -webkit-text-stroke: 2px rgba(122, 122, 122, 0.5);
+}
+ul li a::before {
+   content: attr(data-text);
+   position: absolute;
+   color: var(--clr);
+   width: 0;
+   overflow: hidden;
+   transition: 1s;
+   border-right: 8px solid var(--clr);
+   -webkit-text-stroke: 1px var(--clr);
+}
+ul li a:hover::before{
+   width: 100%;
+   filter: drop-shadow(0 0 25px var(--clr));
+}
+.breadcrumb{
+    border: 2px;
+    background-color: #ff4e00;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 3px rgb(0 0 0 / 26%);    
+}
+a:-webkit-any-link {
+    text-decoration: none;
+    color: #1d3b21 ;
+ }
+ .card {
+    font-family: 'Inconsolata', monospace;
+    background-color: #ec6527;
+    border-radius: 0.4rem;
+    padding-left: 20px
+ }
+ .card {
+   color: aliceblue;
+ }
+ #card {
+    border: solid #000000;
+    border: 3px;
+    width: 50%;
+ }
+ .navbar-brand{
+   margin: 0;
+   font-weight: 200;
+   font-family: 'Poppins', sans-serif;
+   text-transform: uppercase;
+   text-decoration-line: none;
+   font-size: 1.3em;
+   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.26);
+}
+.navbar-brand a{
+    color: #000000;
+    
+}
+.btn btn-primary{
+    color: #000000;
+}
+.border-top{
+   text-align: center;
+   padding-top: 50 px;
+}
+.second{
+   padding-top: 25px;
+   
+}
+.simple-linear {
+   background: linear-gradient(rgb(255, 255, 255), rgb(255, 115, 0));
+ }
+ footer{
+
+   color: white ;
+   width: 100% ;
+   height: 100px;
+   background-color: #000000;
+ }
+ .small{
+   padding-top: 5%;
+ }
+ .columns {
+   padding-left: 1%;
+ }
